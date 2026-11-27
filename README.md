@@ -35,3 +35,7 @@ When everything fits, the tracker looks and acts exactly like the default one. T
 - Outside Edit Mode it makes the tracker frame tall enough that Blizzard never truncates the quest list. It moves the tracker's modules into a `ScrollFrame` below the header and limits that frame to Max Height. It also ends the background (`NineSlice`) at the bottom of that visible area and shrinks the clamp-to-screen rectangle to match.
 - The scroll bar is Blizzard's `MinimalScrollBar` template. `Skin.lua` restyles it, and draws the tracker border and background, using flat colour textures, so no art files are shipped. The border is sized in physical pixels, so it stays crisp at any UI scale.
 - **Taint:** quest item buttons in the tracker call a protected function, so the addon never replaces or calls Blizzard's tracker or Edit Mode Lua functions and never writes fields onto Blizzard frames. It only uses `hooksecurefunc`, reads values, and calls C widget methods (`SetHeight`, `SetPoint`, `SetParent`, `SetClampRectInsets`, and Edit Mode's saved `SetPointBase` / `ClearAllPointsBase`). If you ever see "blocked from an action" errors that point at this addon, that rule has been broken somewhere.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
