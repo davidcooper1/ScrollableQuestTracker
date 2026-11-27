@@ -3,6 +3,7 @@
 ## Notes: Adds a maximum height and a scrollable view to the default objective tracker. Settings live in Edit Mode.
 ## Author: david
 ## Version: 0.4.0
+## IconTexture: Interface\AddOns\ScrollableQuestTracker\Media\Icon
 ## SavedVariables: ScrollableQuestTrackerDB
 
 Locales.lua

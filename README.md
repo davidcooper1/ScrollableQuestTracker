@@ -36,6 +36,10 @@ When everything fits, the tracker looks and acts exactly like the default one. T
 - The scroll bar is Blizzard's `MinimalScrollBar` template. `Skin.lua` restyles it, and draws the tracker border and background, using flat colour textures, so no art files are shipped. The border is sized in physical pixels, so it stays crisp at any UI scale.
 - **Taint:** quest item buttons in the tracker call a protected function, so the addon never replaces or calls Blizzard's tracker or Edit Mode Lua functions and never writes fields onto Blizzard frames. It only uses `hooksecurefunc`, reads values, and calls C widget methods (`SetHeight`, `SetPoint`, `SetParent`, `SetClampRectInsets`, and Edit Mode's saved `SetPointBase` / `ClearAllPointsBase`). If you ever see "blocked from an action" errors that point at this addon, that rule has been broken somewhere.
 
+## Icon
+
+`Media/Icon.tga` (64×64) is the in-game icon in the AddOns list. `Media/Icon.png` (512×512) is the same picture for CurseForge and other listings.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
